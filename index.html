@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+    </head>
+    <body>
+
+        <h2>College CoST Login</h2>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        <div id="id01" class="modal">
+            
+            <form action="php/connect.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="Image/logo UC.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+
+                    <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                
+                        <button type="submit" >Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
